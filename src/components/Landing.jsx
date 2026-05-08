@@ -1,6 +1,7 @@
 ﻿import { useNavigate } from 'react-router-dom'
-import { Sparkles, Building2, ArrowRight, Heart } from 'lucide-react'
+import { Sparkles, Building2, ArrowRight } from 'lucide-react'
 import { useApp } from '../context/AppContext'
+import HeryaLogo from '../assets/HeryaLogo'
 
 export default function Landing() {
   const navigate = useNavigate()
@@ -26,12 +27,7 @@ export default function Landing() {
       <div className="flex-1 flex flex-col items-center justify-center px-6 py-12">
         {/* Logo */}
         <div className="mb-8 text-center">
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <div className="w-10 h-10 rounded-2xl gradient-primary flex items-center justify-center">
-              <Heart size={20} className="text-white" />
-            </div>
-            <span className="font-heading text-3xl font-bold text-[#1A1A1A]">herya</span>
-          </div>
+          <HeryaLogo className="w-48 h-auto mx-auto mb-3" />
           <p className="text-[#444444] text-sm">Salud hormonal femenina</p>
         </div>
 
