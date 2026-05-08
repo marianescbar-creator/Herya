@@ -1,6 +1,6 @@
 ﻿import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ArrowLeft, ArrowRight, Check, Heart } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Check, HeartPulse } from 'lucide-react'
 import { useApp } from '../../context/AppContext'
 import { SYMPTOMS_LIST, RATING_LABELS, getSeverityInfo } from '../../data/mockData'
 
@@ -78,7 +78,7 @@ export default function Assessment() {
             <ArrowLeft size={16} className="text-white" />
           </button>
           <div className="flex items-center gap-2">
-            <Heart size={18} className="text-white" />
+            <HeartPulse size={18} className="text-white" />
             <span className="text-white font-semibold">herya</span>
           </div>
         </div>

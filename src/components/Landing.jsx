@@ -1,5 +1,5 @@
 ﻿import { useNavigate } from 'react-router-dom'
-import { Sparkles, Building2, ArrowRight } from 'lucide-react'
+import { Sparkles, Building2, ArrowRight, HeartPulse } from 'lucide-react'
 import { useApp } from '../context/AppContext'
 import HeryaLogo from '../assets/HeryaLogo'
 
@@ -52,7 +52,7 @@ export default function Landing() {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-2xl gradient-primary flex items-center justify-center flex-shrink-0">
-                  <Heart size={22} className="text-white" />
+                  <HeartPulse size={22} className="text-white" />
                 </div>
                 <div>
                   <div className="font-semibold text-[#1A1A1A] text-base mb-0.5">Soy usuaria</div>

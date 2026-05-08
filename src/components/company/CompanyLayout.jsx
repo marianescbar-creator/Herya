@@ -1,5 +1,5 @@
 ﻿import { Outlet, NavLink, useNavigate } from 'react-router-dom'
-import { LayoutDashboard, FileText, Settings, Heart, ArrowLeft } from 'lucide-react'
+import { LayoutDashboard, FileText, Settings, HeartPulse, ArrowLeft } from 'lucide-react'
 
 const tabs = [
   { to: '/company/dashboard', icon: LayoutDashboard, label: 'Panel' },
@@ -17,7 +17,7 @@ export default function CompanyLayout() {
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-xl gradient-primary flex items-center justify-center">
-              <Heart size={16} className="text-white" />
+              <HeartPulse size={16} className="text-white" />
             </div>
             <div>
               <div className="font-heading font-bold text-[#1A1A1A] text-sm">herya</div>

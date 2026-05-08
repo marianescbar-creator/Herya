@@ -1,6 +1,6 @@
 ﻿import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { LogOut, RefreshCw, User, Heart, Building2, Bell, Info, Pill, Calendar, FolderOpen, Plus, X, Check } from 'lucide-react'
+import { LogOut, RefreshCw, User, HeartPulse, Building2, Bell, Info, Pill, Calendar, FolderOpen, Plus, X, Check } from 'lucide-react'
 import { useApp } from '../../context/AppContext'
 import { getSeverityInfo } from '../../data/mockData'
 
@@ -118,7 +118,7 @@ export default function Profile() {
         <p className="text-[#444444] text-sm">{userProfile.stage} · {userProfile.age} años</p>
         <div className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold"
           style={{ backgroundColor: sev.bgColor, color: sev.textColor }}>
-          <Heart size={11} />
+          <HeartPulse size={11} />
           Carga sintomática {sev.label} · {userProfile.totalScore}/40
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { Outlet, NavLink } from 'react-router-dom'
-import { Activity, Calendar, MessageCircle, BookOpen, User, Heart, ClipboardList, MapPin } from 'lucide-react'
+import { Activity, Calendar, MessageCircle, BookOpen, User, HeartPulse, ClipboardList, MapPin } from 'lucide-react'
 
 const tabs = [
   { to: '/user/health',    icon: Activity,      label: 'Panel' },
@@ -22,7 +22,7 @@ export default function UserLayout() {
         <div className="px-5 py-5 border-b border-[#F0E0EA] flex-shrink-0">
           <div className="flex items-center gap-2.5">
             <div className="w-9 h-9 rounded-xl gradient-primary flex items-center justify-center">
-              <Heart size={16} className="text-white" />
+              <HeartPulse size={16} className="text-white" />
             </div>
             <div>
               <div className="font-heading font-bold text-[#1A1A1A] text-base leading-tight">herya</div>
