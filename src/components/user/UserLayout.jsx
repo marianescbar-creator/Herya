@@ -1,5 +1,6 @@
 import { Outlet, NavLink } from 'react-router-dom'
 import { Activity, Calendar, MessageCircle, BookOpen, User, HeartPulse, ClipboardList, MapPin } from 'lucide-react'
+import HeryaLogo from '../../assets/HeryaLogo'
 
 const tabs = [
   { to: '/user/health',    icon: Activity,      label: 'Panel' },
@@ -20,15 +21,7 @@ export default function UserLayout() {
       <aside className="hidden lg:flex flex-col w-60 bg-white border-r border-[#F0E0EA] fixed inset-y-0 left-0 z-40">
         {/* Brand */}
         <div className="px-5 py-5 border-b border-[#F0E0EA] flex-shrink-0">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl gradient-primary flex items-center justify-center">
-              <HeartPulse size={16} className="text-white" />
-            </div>
-            <div>
-              <div className="font-heading font-bold text-[#1A1A1A] text-base leading-tight">herya</div>
-              <div className="text-[10px] text-[#666666]">tu salud, tu ritmo</div>
-            </div>
-          </div>
+          <HeryaLogo className="w-28 h-auto" />
         </div>
 
         {/* Nav links */}
