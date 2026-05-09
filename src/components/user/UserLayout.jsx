@@ -19,6 +19,7 @@ export default function UserLayout() {
   const scrollRef = useRef(null)
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     if (scrollRef.current) scrollRef.current.scrollTop = 0
   }, [location.pathname])
 
