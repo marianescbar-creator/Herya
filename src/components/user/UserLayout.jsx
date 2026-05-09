@@ -1,4 +1,5 @@
-import { Outlet, NavLink } from 'react-router-dom'
+import { useEffect, useRef } from 'react'
+import { Outlet, NavLink, useLocation } from 'react-router-dom'
 import { Activity, Calendar, MessageCircle, BookOpen, User, HeartPulse, ClipboardList, MapPin } from 'lucide-react'
 import HeryaLogo from '../../assets/HeryaLogo'
 
@@ -14,6 +15,13 @@ const tabs = [
 const bottomTabs = tabs.slice(0, 5)
 
 export default function UserLayout() {
+  const location = useLocation()
+  const scrollRef = useRef(null)
+
+  useEffect(() => {
+    if (scrollRef.current) scrollRef.current.scrollTop = 0
+  }, [location.pathname])
+
   return (
     <div className="min-h-screen bg-[#FAF9F7] lg:flex">
 
@@ -54,7 +62,7 @@ export default function UserLayout() {
 
       {/* ── Main content ────────────────────────────────────────────────── */}
       <div className="flex-1 lg:ml-60 flex flex-col min-h-screen">
-        <div className="flex-1 overflow-y-auto pb-24 lg:pb-8">
+        <div ref={scrollRef} className="flex-1 overflow-y-auto pb-24 lg:pb-8">
           <div className="max-w-2xl lg:max-w-4xl mx-auto">
             <Outlet />
           </div>
