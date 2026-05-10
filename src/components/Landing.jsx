@@ -55,7 +55,7 @@ export default function Landing() {
                   <HeartPulse size={22} className="text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-[#1A1A1A] text-base mb-0.5">Soy usuaria</div>
+                  <div className="font-semibold text-[#1A1A1A] text-base mb-0.5">Soy profesional</div>
                   <div className="text-[#444444] text-sm">Accede a tu plan personalizado</div>
                 </div>
               </div>
